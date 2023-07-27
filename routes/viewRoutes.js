@@ -10,7 +10,7 @@ router.get('/passwordRecover', viewsController.passwordRecover);
 router.get('/resetPassword', viewsController.passwordReset);
 
 router.get('/', authController.isLoggedIn, viewsController.getOverview);
-router.get('/natours', authController.isLoggedIn, viewsController.getNatours);
+router.get('/TourEase', authController.isLoggedIn, viewsController.getNatours);
 router.get('/tour/:slug', authController.isLoggedIn, viewsController.getTour);
 router.get('/login', authController.isLoggedIn, viewsController.getLoginForm);
 router.get('/signup', authController.isLoggedIn, viewsController.getSignUpForm);
